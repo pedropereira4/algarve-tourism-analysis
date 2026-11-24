@@ -1,0 +1,25 @@
+# Dados: brutos e marts ficam fora do git (só se versiona a pasta vazia)
+data/raw/*
+data/marts/*
+!data/raw/.gitkeep
+!data/marts/.gitkeep
+*.duckdb
+*.duckdb.wal
+
+# Power BI: powerbi/ entra no git, exceto as caches locais do formato PBIP
+powerbi/**/.pbi/localSettings.json
+powerbi/**/.pbi/cache.abf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Ambiente e sistema operativo
+.env
+.DS_Store
+Thumbs.db

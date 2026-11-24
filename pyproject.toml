@@ -10,6 +10,7 @@ dependencies = [
     "pyarrow>=17",
     "requests>=2.32",
     "statsmodels>=0.14",
+    "truststore>=0.10",
 ]
 
 [dependency-groups]
@@ -27,3 +28,4 @@ select = ["E", "F", "I", "UP", "B"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src"]
